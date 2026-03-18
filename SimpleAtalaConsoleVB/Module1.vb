@@ -11,11 +11,8 @@ Module Module1
         'RegisteredDecoders.Decoders.Add(New PdfDecoder() With {.Resolution = 200})
 
         Console.WriteLine("SimpleAtalaConsole Starting...")
-        Dim imgPath As String = GetWorkingDir()
-        If (Not Directory.Exists(Path.Combine(imgPath, "_CUSTFILES"))) Then
-            Directory.CreateDirectory(Path.Combine(imgPath, "_CUSTFILES"))
-            File.Copy("images\Tiger.jpg", Path.Combine(imgPath, "_CUSTFILES", "Tiger.jpg"))
-        End If
+        Dim imgPath As String = DemoSetup()
+
 
         Dim inFile As String = imgPath & "_CUSTFILES\Tiger.jpg"
         Console.WriteLine("  inFile: " & inFile)
@@ -39,6 +36,7 @@ Module Module1
         Console.ReadLine()
     End Sub
 
+#Region "Utility Methods"
     Private Function GetWorkingDir() As String
         Dim cwd As String = System.IO.Directory.GetCurrentDirectory()
 
@@ -49,6 +47,22 @@ Module Module1
         Return cwd
     End Function
 
+
+    ''' <summary>
+    ''' This is only for setting up the console app demo files and is not really much to do 
+    ''' directly with DotImage. It just ensures that it copies Tiger.jpg into the right location
+    ''' </summary>
+    ''' <returns></returns>
+    Private Function DemoSetup() As String
+        Dim setupDir As String = Path.Combine(GetWorkingDir(), "_CUSTFILES")
+        If (Not Directory.Exists(setupDir)) Then
+            Directory.CreateDirectory(setupDir)
+            File.Copy("images\Tiger.jpg", Path.Combine(setupDir, "Tiger.jpg"))
+        End If
+
+        Return GetWorkingDir()
+    End Function
+#End Region
 End Module
 
 
