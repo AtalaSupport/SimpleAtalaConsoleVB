@@ -8,7 +8,7 @@ It is meant to be used as a quick starting point for Repros that do not require 
 
 We have a minimal [WebDocumentViewer with WebDocumentThumbnailer](https://github.com/AtalaSupport/SimpleWDVwithWDT) sample app as well as minimal WebCapture (WingScan) apps for web and our AdvanceScanToFile is an excellent minimal Winforms app. For Wpf, we have WpfAnnotations.  
 
-This is the VB.NET version. For C# please see [SimpleAtalaConsole](https://github.com/AtalaSupport/SimpleAtalaConsole/wiki) for more options
+This is the VB.NET version. For other languages / targets, please see [SimpleAtalaConsole](https://github.com/AtalaSupport/SimpleAtalaConsole/wiki) for more options
 
 ## Licening
 This applicaiton requires at minimum any level of DotImage licensing or a valid DotImage eval license on the machine where you are building and running.  
