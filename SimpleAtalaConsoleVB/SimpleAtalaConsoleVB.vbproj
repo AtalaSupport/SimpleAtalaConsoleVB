@@ -47,17 +47,17 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Atalasoft.dotImage, Version=11.4.0.434, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+    <Reference Include="Atalasoft.dotImage">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Program Files (x86)\Atalasoft\DotImage 11.4\bin\4.5.2\x86\Atalasoft.dotImage.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.dotImage.Lib, Version=11.4.0.434, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=x86">
+    <Reference Include="Atalasoft.dotImage.Lib">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Program Files (x86)\Atalasoft\DotImage 11.4\bin\4.5.2\x86\Atalasoft.dotImage.Lib.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.dotImage.Lib.dll</HintPath>
     </Reference>
-    <Reference Include="Atalasoft.Shared, Version=11.4.0.434, Culture=neutral, PublicKeyToken=2b02b46f7326f73b, processorArchitecture=MSIL">
+    <Reference Include="Atalasoft.Shared">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Program Files (x86)\Atalasoft\DotImage 11.4\bin\4.5.2\x86\Atalasoft.Shared.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Atalasoft\DotImage 2026.2\bin\4.6.2\x64\Atalasoft.Shared.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
